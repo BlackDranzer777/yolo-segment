@@ -16,7 +16,7 @@ This repository contains code for object detection and segmentation using YOLOv8
 Make sure you have Python 3.8+ installed. Install the required packages using:
 ```bash
 pip install -r requirements.txt
-
+```
 
 Dataset Setup
 Roboflow Dataset
