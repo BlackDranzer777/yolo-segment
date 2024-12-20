@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['cars', 'houses', 'street-lamp', 'trees']
+
+roboflow:
+  workspace: divyansh-jain-ymswv
+  project: aerial-imagery-u0sq0
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/divyansh-jain-ymswv/aerial-imagery-u0sq0/dataset/1
