@@ -39,3 +39,15 @@ nc: 4  # Number of classes
 names: ['trees', 'cars', 'houses', 'street-lamps']
 ```
 
+#Training the Model
+###Using YOLOv8
+Install ultralytics:
+```bash
+pip install ultralytics
+```
+
+###Train YOLOv8 on the dataset:
+```bash
+yolo task=detect mode=train data=./nadir_data_set/data.yaml model=yolov8n.pt epochs=50 imgsz=640
+```
+The trained weights will be saved in the runs/detect/train/weights/ directory.
