@@ -46,8 +46,21 @@ Install ultralytics:
 pip install ultralytics
 ```
 
+
 ### Train YOLOv8 on the dataset:
 ```bash
 yolo task=detect mode=train data=./nadir_data_set/data.yaml model=yolov8n.pt epochs=50 imgsz=640
 ```
 The trained weights will be saved in the runs/detect/train/weights/ directory.
+
+# Running the Pipeline
+### YOLO + SAM Pipeline
+The pipeline detects objects using YOLOv8 and refines segmentation using Meta SAM.
+
+Run the script:
+
+```bash
+python final_main.py
+```
+Input: Place test images in nadir_data_set/test/images.
+Output: Results will be saved in test_results/
