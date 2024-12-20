@@ -64,3 +64,19 @@ python final_main.py
 ```
 Input: Place test images in nadir_data_set/test/images.
 Output: Results will be saved in test_results/
+
+
+# Directory Structure
+```bash
+.
+├── final_main.py
+├── final_main_just_sam.py
+├── nadir_data_set/
+│   ├── train/
+│   ├── valid/
+│   ├── test/
+│   └── data.yaml
+├── sam_vit_h_4b8939.pth
+├── yolov8n.pt
+└── README.md
+```
